@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    font-family: "Titillium Web", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.info {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 40px;
+}
+
+#container-fluid{
+    -webkit-transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
+}
+
+
+
+#container-fluid:hover {
+    background: rgb(189, 166, 188);
+}
+
+/* SECCION INICIO */
+.inicio {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/pexels-negativespace-92904.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(244, 241, 243);
+}
+
+.inicio .contenedor {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.inicio .foto {
+    display: flex;
+    justify-content: center;
+}
+
+.inicio .foto img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(207, 201, 206);
+    position: relative;
+    bottom: -80px;
+}
+
+.inicio .redes a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #adb5c1;
+    color: rgb(212, 21, 174);
+    border: 1px solid rgb(177, 163, 174);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 15px; /* Aumenta el espacio entre botones cambiando 5px a 15px */
+    transition: .3s;
+    text-align: center; /* Asegúrate de que el texto esté centrado */
+}
+
+/* Estilo para los elementos dentro de los botones */
+.inicio .redes a p {
+    font-size: 14px;
+    color: rgb(244, 241, 243);
+    margin-top: 10px; /* Ajusta el margen superior si es necesario */
+}
+
+
+
+
+/* Cambio de color en hover */
+.inicio .redes a:hover {
+    background-color: rgb(123, 79, 114);
+    color: #ffffff;
+}
+
+.inicio .contenedor .foto {
+    position: relative;
+}
+
+/* Estilos generales */
+.titulo-seccion {
+    font-family: yellowtail;
+    font-size: 1.5rem;
+}
+
+/* SECCIÓN SOBRE MI */
+.sobremi {
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+
+.sobremi .contenido-seccion h2,
+.sobremi .contenido-seccion h3 {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.sobremi .contenido-seccion h3 {
+    font-size: 30px;
+}
+
+.sobremi .contenido-seccion .especial {
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.sobremi .contenido-seccion p {
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+
+.sobremi .contenido-seccion .fila {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.sobremi .contenido-seccion .col {
+    width: 30%;
+    height: 120px;
+    overflow-y: auto; /* Cambiado a auto para scroll solo cuando sea necesario */
+    overflow-x: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sobremi .contenido-seccion .col svg {
+    color: #940253;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #940253;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.sobremi .contenido-seccion .col span {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px 0;
+}
+
+
+.sobremi .contenido-seccion .col::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sobremi .contenido-seccion .col::-webkit-scrollbar-thumb {
+    background-color: #940253;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION HABILIDADES */
+.habilidades {
+    padding: 80px 0 100px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/cropped-banner-informatica.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.habilidades .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.habilidades .contenido-seccion h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.habilidades .contenido-seccion .fila {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.habilidades .contenido-seccion .fila .col {
+    width: 47%;
+    text-align: left;
+}
+
+.habilidades .contenido-seccion .fila .col .cont-barra {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para las barras de progreso en la sección de habilidades */
+.habilidades .contenido-seccion .barra {
+    display: flex;
+    border: 1px solid #940253;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.habilidades .contenido-seccion .barra .e {
+    background-color: #363636;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+}
+
+/* SECCIÓN RESUMEN */
+.resumen {
+    background-color: #e6e6e6;
+    padding: 140px 0 100px;
+    text-align: center;
+}
+
+.resumen .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.resumen .contenido-seccion h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.resumen .contenido-seccion .info {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: 100px;
+}
+
+.resumen .contenido-seccion .info .col {
+    width: 45%;
+}
+
+.resumen .contenido-seccion .info .col .titulo {
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+}
+
+.resumen .contenido-seccion .info .col table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+.resumen .contenido-seccion .info .col table .datos {
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+
+.resumen .contenido-seccion .info .col table h4 {
+    margin-top: 10px;
+}
+
+.resumen .contenido-seccion .info .col table h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.resumen .contenido-seccion .info .col table p {
+    font-size: 14px;
+}
+
+.resumen .contenido-seccion .info .col table .promedio {
+    display: block;
+    color: #940253;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.resumen .contenido-seccion .info .col table .despricion {
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* SECCIÓN COMUNICATE */
+.comunicate {
+    text-align: center;
+    background-color: #66666649;
+    padding: 30px 0 60px 0;
+}
+
+.comunicate .contenido-seccion .titulo-seccion {
+    color: #940253;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+  
+}
+
+.comunicate .contenido-seccion h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.comunicate .contenido-seccion .fila {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.comunicate .contenido-seccion .col {
+    width: 30%;
+}
+
+.comunicate .contenido-seccion .col svg {
+    color: #940253;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #940253;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.comunicate .contenido-seccion .col span {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px 0;
+}
+
+
+.comunicate .contenido-seccion .col  a {
+    color: #940253 !important;
+}
+
+
+.comunicate .contenido-seccion .col span.titulo-detalle a {
+    color: #940253;
+}
+
+
+
+.contenedortabla {
+    padding: 140px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(to right, #f2f4f7, #a590a7);
+}
+
+
+
+.tablita {
+    
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+    width: 600px;
+    margin-bottom: 40px;
+    
+}
+
+/* Aplicar borde a todos los elementos h2 */
+h5 {
+    border-style: inset;
+    box-shadow: -5px 5px 12px #000;
+}
+
+.tabla-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.tabla {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+}
+
+#monarca {
+    width: 100%;
+    height: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.tabla th, .tabla td {
+    border: 1px solid #940253;
+    padding: 8px;
+    text-align: left;
+   
+}
+
+.tabla th {
+    background-color: #cdc2d9;
+    font-weight: bold;
+    
+}
+
+/* Media Queries para pantallas pequeñas */
+
+/* Ajustes para pantallas con ancho máximo de 768px (tablets y móviles grandes) */
+@media (max-width: 768px) {
+    .sobremi .contenido-seccion .fila,
+    .resumen .contenido-seccion .info,
+    .comunicate .contenido-seccion .fila {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .sobremi .contenido-seccion .col,
+    .resumen .contenido-seccion .info .col,
+    .comunicate .contenido-seccion .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tabla-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tablita {
+        width: 90%; /* Ajusta el tamaño del título en pantallas más pequeñas */
+        font-size: 1.2rem; /* Ajusta el tamaño de fuente del título en pantallas más pequeñas */
+        padding: 8px; /* Ajusta el padding del título en pantallas más pequeñas */
+    }
+}
+
+/* Ajustes para pantallas con ancho máximo de 480px (teléfonos pequeños) */
+@media (max-width: 480px) {
+    .inicio .foto img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .sobremi .contenido-seccion h2,
+    .sobremi .contenido-seccion h3,
+    .habilidades .contenido-seccion h3,
+    .resumen .contenido-seccion h3 {
+        font-size: 24px;
+    }
+
+    .tabla-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabla {
+        max-width: none;
+    }
+
+    .tablita {
+        width: 90%; /* Ajusta el tamaño del título en pantallas pequeñas */
+        font-size: 1rem; /* Ajusta el tamaño de fuente del título en pantallas más pequeñas */
+        padding: 6px; /* Ajusta el padding del título en pantallas más pequeñas */
+    }
+}
