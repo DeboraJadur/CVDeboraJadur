@@ -16,20 +16,18 @@ html {
     font-size: 40px;
 }
 
-#container-fluid{
+#container-fluid {
     -webkit-transition: background-color 1s ease-in-out;
     -moz-transition: background-color 1s ease-in-out;
     -o-transition: background-color 1s ease-in-out;
     transition: background-color 1s ease-in-out;
 }
 
-
-
 #container-fluid:hover {
     background: rgb(189, 166, 188);
 }
 
-/* SECCION INICIO */
+/* SECCIÓN INICIO */
 .inicio {
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/pexels-negativespace-92904.jpg");
     background-position: center center;
@@ -71,7 +69,7 @@ html {
     line-height: 30px;
     margin: 0 15px; /* Aumenta el espacio entre botones cambiando 5px a 15px */
     transition: .3s;
-    text-align: center; /* Asegúrate de que el texto esté centrado */
+    text-align: center; 
 }
 
 /* Estilo para los elementos dentro de los botones */
@@ -80,9 +78,6 @@ html {
     color: rgb(244, 241, 243);
     margin-top: 10px; /* Ajusta el margen superior si es necesario */
 }
-
-
-
 
 /* Cambio de color en hover */
 .inicio .redes a:hover {
@@ -163,27 +158,15 @@ html {
     margin-top: 12px 0;
 }
 
-
 .sobremi .contenido-seccion .col::-webkit-scrollbar {
     width: 6px;
 }
 
 .sobremi .contenido-seccion .col::-webkit-scrollbar-thumb {
     background-color: #940253;
-    
 }
 
-
-
-
-
-
-
-
-
-
-
-/* SECCION HABILIDADES */
+/* SECCIÓN HABILIDADES */
 .habilidades {
     padding: 80px 0 100px;
     text-align: center;
@@ -328,7 +311,6 @@ html {
     margin-top: 0px;
     text-align: center;
     margin-bottom: 20px;
-  
 }
 
 .comunicate .contenido-seccion h3 {
@@ -364,17 +346,13 @@ html {
     margin-top: 12px 0;
 }
 
-
-.comunicate .contenido-seccion .col  a {
+.comunicate .contenido-seccion .col a {
     color: #940253 !important;
 }
-
 
 .comunicate .contenido-seccion .col span.titulo-detalle a {
     color: #940253;
 }
-
-
 
 .contenedortabla {
     padding: 140px 0 100px 0;
@@ -382,10 +360,7 @@ html {
     background: linear-gradient(to right, #f2f4f7, #a590a7);
 }
 
-
-
 .tablita {
-    
     justify-content: center;
     text-align: center;
     display: inline-block;
@@ -395,7 +370,6 @@ html {
     padding: 10px;
     width: 600px;
     margin-bottom: 40px;
-    
 }
 
 /* Aplicar borde a todos los elementos h2 */
@@ -426,19 +400,15 @@ h5 {
     box-sizing: border-box;
 }
 
-
-
 .tabla th, .tabla td {
     border: 1px solid #940253;
     padding: 8px;
     text-align: left;
-   
 }
 
 .tabla th {
     background-color: #cdc2d9;
     font-weight: bold;
-    
 }
 
 /* Media Queries para pantallas pequeñas */
@@ -472,7 +442,7 @@ h5 {
 }
 
 /* Ajustes para pantallas con ancho máximo de 480px (teléfonos pequeños) */
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     .inicio .foto img {
         width: 15rem;
         height: 15rem;
@@ -480,9 +450,12 @@ h5 {
 
     .sobremi .contenido-seccion h2,
     .sobremi .contenido-seccion h3,
-    .habilidades .contenido-seccion h3,
     .resumen .contenido-seccion h3 {
         font-size: 24px;
+    }
+
+    .habilidades .contenido-seccion .fila {
+        display: block;
     }
 
     .tabla-container {
@@ -500,3 +473,4 @@ h5 {
         padding: 6px; /* Ajusta el padding del título en pantallas más pequeñas */
     }
 }
+
