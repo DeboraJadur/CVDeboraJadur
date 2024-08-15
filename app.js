@@ -29,10 +29,10 @@ function efectoHabilidades() {
     let distancia_skills = window.innerHeight - habilidades.getBoundingClientRect().top;
     if (distancia_skills >= 300 && !entro) {
         entro = true;
-        setInterval(() => pintarBarra(barras.html, 16, 'html'), 100);
+        setInterval(() => pintarBarra(barras.html, 15, 'html'), 100);
         setInterval(() => pintarBarra(barras.javascript, 5, 'javascript'), 100);
-        setInterval(() => pintarBarra(barras.python, 11, 'python'), 100);
-        setInterval(() => pintarBarra(barras.sql, 6, 'sql'), 100);
+        setInterval(() => pintarBarra(barras.python, 14, 'python'), 100);
+        setInterval(() => pintarBarra(barras.sql, 10, 'sql'), 100);
     }
 }
 
