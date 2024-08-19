@@ -31,7 +31,7 @@ html {
 .inicio {
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/pexels-negativespace-92904.jpg");
     background-position: center center;
-    background-attachment: fixed;
+   
     background-size: cover;
     color: rgb(244, 241, 243);
 }
@@ -174,7 +174,6 @@ html {
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/cropped-banner-informatica.jpg");
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     color: #ffffff;
 }
 
