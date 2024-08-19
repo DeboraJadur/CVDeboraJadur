@@ -54,3 +54,10 @@ document.addEventListener('scroll', function () {
     const desplazamiento = window.pageYOffset;
     elementoInicio.style.backgroundPositionY = `${desplazamiento * 0.5}px`;
 });
+
+
+document.addEventListener('scroll', function () {
+    const elementoHabilidades = document.querySelector('.habilidades');
+    const desplazamiento = window.pageYOffset;
+    elementoHabilidades.style.backgroundPositionY = `${desplazamiento * 0.5}px`;
+});
