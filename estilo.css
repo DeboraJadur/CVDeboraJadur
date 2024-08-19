@@ -29,17 +29,41 @@ html {
 
 /* SECCIÓN INICIO */
 .inicio {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/pexels-negativespace-92904.jpg");
-    background-position: center center;
-   
-    background-size: cover;
-    color: rgb(244, 241, 243);
+   position: relative;
+   background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3))
 }
 
+
+.inicio-bg{
+   
+   position: fixed;
+   z-index: -1;   /* por detras de lo demas*/
+
+   top:0;
+   left: 0;
+
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   ;
+
+
+}
 .inicio .contenedor {
     max-width: 100%;
     margin: auto;
     text-align: center;
+}
+
+
+.inicio .info h1, h2 {
+    color: #ffffff;  
+}
+
+
+.inicio .logo {
+    font-size: 2rem;  /* Ajusta el tamaño del texto si es necesario */
+    color: #ffffff;   /* Cambia el color del logo "CV" a blanco */
 }
 
 .inicio .foto {
@@ -100,14 +124,16 @@ html {
     background-color: #e6e6e6;
     padding: 140px 0 100px 0;
     text-align: center;
+    padding: 20px;
 }
 
-.sobremi .contenido-seccion h2,
+.sobremi .contenido-seccion h8,
 .sobremi .contenido-seccion h3 {
     max-width: 1000px;
     margin: auto;
     padding: 0 10px;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .sobremi .contenido-seccion h3 {
@@ -174,6 +200,7 @@ html {
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/cropped-banner-informatica.jpg");
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     color: #ffffff;
 }
 
