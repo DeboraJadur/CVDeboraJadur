@@ -48,3 +48,9 @@ function pintarBarra(id_barra, cantidad, indice) {
 }
 
 window.onscroll = efectoHabilidades;
+
+document.addEventListener('scroll', function () {
+    const elementoInicio = document.querySelector('.inicio');
+    const desplazamiento = window.pageYOffset;
+    elementoInicio.style.backgroundPositionY = `${desplazamiento * 0.5}px`;
+});
