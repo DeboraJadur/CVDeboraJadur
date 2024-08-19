@@ -178,11 +178,13 @@ html {
 .habilidades {
     padding: 80px 0 100px;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/cropped-banner-informatica.jpg");
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/jo.jpg");
     background-size: cover;
     background-position: center center;
+    background-repeat:inherit;
     
     color: #ffffff;
+    
 }
 
 
@@ -409,17 +411,18 @@ h5 {
 
 #monarca {
     width: 100%;
-    height: 50px;
+    height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 0px;
+    
 }
 
 .tabla th, .tabla td {
     border: 1px solid #940253;
     padding: 8px;
     text-align: left;
+    margin-top: 0px;
 }
 
 .tabla th {
