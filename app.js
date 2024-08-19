@@ -55,9 +55,9 @@ document.addEventListener('scroll', function () {
     elementoInicio.style.backgroundPositionY = `${desplazamiento * 0.5}px`;
 });
 
-
 document.addEventListener('scroll', function () {
     const elementoHabilidades = document.querySelector('.habilidades');
     const desplazamiento = window.pageYOffset;
+    // Ajusta la posición del fondo según el desplazamiento
     elementoHabilidades.style.backgroundPositionY = `${desplazamiento * 0.5}px`;
 });
