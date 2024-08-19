@@ -27,43 +27,19 @@ html {
     background: rgb(189, 166, 188);
 }
 
-/* SECCIÓN INICIO */
+/* SECCION INICIO */
 .inicio {
-   position: relative;
-   background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3))
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/pexels-negativespace-92904.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(244, 241, 243);
 }
 
-
-.inicio-bg{
-   
-   position: fixed;
-   z-index: -1;   /* por detras de lo demas*/
-
-   top:0;
-   left: 0;
-
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   ;
-
-
-}
 .inicio .contenedor {
     max-width: 100%;
     margin: auto;
     text-align: center;
-}
-
-
-.inicio .info h1, h2 {
-    color: #ffffff;  
-}
-
-
-.inicio .logo {
-    font-size: 2rem;  /* Ajusta el tamaño del texto si es necesario */
-    color: #ffffff;   /* Cambia el color del logo "CV" a blanco */
 }
 
 .inicio .foto {
@@ -93,7 +69,7 @@ html {
     line-height: 30px;
     margin: 0 15px; /* Aumenta el espacio entre botones cambiando 5px a 15px */
     transition: .3s;
-    text-align: center; 
+    text-align: center; /* Asegúrate de que el texto esté centrado */
 }
 
 /* Estilo para los elementos dentro de los botones */
@@ -102,6 +78,9 @@ html {
     color: rgb(244, 241, 243);
     margin-top: 10px; /* Ajusta el margen superior si es necesario */
 }
+
+
+
 
 /* Cambio de color en hover */
 .inicio .redes a:hover {
@@ -118,7 +97,6 @@ html {
     font-family: yellowtail;
     font-size: 1.5rem;
 }
-
 /* SECCIÓN SOBRE MI */
 .sobremi {
     background-color: #e6e6e6;
@@ -194,6 +172,9 @@ html {
 
 /* SECCIÓN HABILIDADES */
 /* SECCIÓN HABILIDADES */
+
+
+
 .habilidades {
     padding: 80px 0 100px;
     text-align: center;
@@ -203,6 +184,7 @@ html {
     background-attachment: fixed;
     color: #ffffff;
 }
+
 
 .habilidades .contenido-seccion {
     max-width: 700px;
