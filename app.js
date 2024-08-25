@@ -30,8 +30,8 @@ function efectoHabilidades() {
     if (distancia_skills >= 300 && !entro) {
         entro = true;
         setInterval(() => pintarBarra(barras.html, 15, 'html'), 100);
-        setInterval(() => pintarBarra(barras.javascript, 5, 'javascript'), 100);
-        setInterval(() => pintarBarra(barras.python, 14, 'python'), 100);
+        setInterval(() => pintarBarra(barras.javascript, 9, 'javascript'), 100);
+        setInterval(() => pintarBarra(barras.python, 10, 'python'), 100);
         setInterval(() => pintarBarra(barras.sql, 10, 'sql'), 100);
     }
 }

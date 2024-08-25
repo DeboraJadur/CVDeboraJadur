@@ -154,7 +154,9 @@ html {
     border: 2px solid #940253;
     line-height: 40px;
     border-radius: 50%;
+
 }
+
 
 .sobremi .contenido-seccion .col span {
     display: block;
@@ -321,6 +323,7 @@ html {
     text-align: center;
     background-color: #66666649;
     padding: 30px 0 60px 0;
+    
 }
 
 .comunicate .contenido-seccion .titulo-seccion {
@@ -357,6 +360,9 @@ html {
     line-height: 40px;
     border-radius: 50%;
 }
+
+
+
 
 .comunicate .contenido-seccion .col span {
     display: block;
